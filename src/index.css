@@ -1,3 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Pacifico&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: white;
+    background: #212A3E;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 100%;
+}
+
+button {
+    transition: 0.5s;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+.page {
+    background-color: rgb(35, 36, 36);
+    color: rgb(226, 226, 226);
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.bg-color {
+    background-color: rgba(0, 0, 0, 0.6);
+}
